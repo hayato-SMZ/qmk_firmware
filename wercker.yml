@@ -1,5 +1,5 @@
 box: 
-  id: ymotongpoo/ubuntu-trusty:wercker
+  id: hayato-SMZ/ubuntu-trusty:wercker
 
 build:
   steps:
