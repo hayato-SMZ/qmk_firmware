@@ -21,17 +21,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|TOGGLE|           |CTLALT|------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |MOUSE |           | DEL  |   N  |   M  |  ,<  |  .>  |   /  |   [{   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  cut | paste| copy | Left | Right|                                       |  Up  | Down |  [{  |  }]  |   \  |
+ *   |  cut | paste| copy | Home | End  |                                       | PgUp | PgDn |  [{  |  }]  |   \  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | LGui | LAlt |       | Alt  | LFn  |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |Back  |      | Home |       | PgUp |        |      |
- *                                 |space | Space|------|       |------|カナ　  |Enter |
- *                                 |      |      | End  |       | PgDn |        |      |
+ *                                 |Back  |      | Left |       |  Up  |        |      |
+ *                                 |space |カナ  |------|       |------| Enter  |Space |
+ *                                 |      |      | Right|       | Down |        |      |
  *                                 `--------------------'       `----------------------'
  */
-// If it accepts an argument (i.e, is a function), it doesn't need KC_.         
+// If it accepts an argument (i.e, is a function), it doesn't need KC_.
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
@@ -39,19 +39,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   MO(FN),
         KC_LCTL,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   TG(MOUSE),
-        LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),   KC_LEFT,  KC_RGHT,
+        LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),   KC_HOME,  KC_END,
                                                 KC_LGUI,        KC_LALT,
-                                                                KC_HOME,
-                                                KC_BSPC,KC_SPC, KC_END,
+                                                                KC_LEFT,
+                                                KC_BSPC,KC_GRV, KC_RGHT,
         // right hand
         KC_PSCR,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
         MO(FN),             KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
                             KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          KC_QUOT,
         LALT(LCTL(KC_DEL)) ,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_RBRC,
-                                   KC_UP,   KC_DOWN,KC_RBRC,KC_BSLS,          KC_RO,
+                                   KC_PGUP, KC_PGDN ,KC_RBRC,KC_BSLS,          KC_RO,
              KC_LALT,        MO(FN),
-             KC_PGUP,
-             KC_PGDN,KC_GRV, KC_ENT
+             KC_UP,
+             KC_DOWN,KC_SPC, KC_ENT
     ),
 
 /* Keymap 1: Function Layer
