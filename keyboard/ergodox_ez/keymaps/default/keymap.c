@@ -27,11 +27,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | LGui | LAlt |       | Alt  | LFn  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |Back  |      | Home |       | PgUp |        |      |
- *                                 |space |カナ  |------|       |------| Enter  |Space |
+ *                                 |space | Space|------|       |------|カナ　  |Enter |
  *                                 |      |      | End  |       | PgDn |        |      |
  *                                 `--------------------'       `----------------------'
  */
-// If it accepts an argument (i.e, is a function), it doesn't need KC_.
+// If it accepts an argument (i.e, is a function), it doesn't need KC_.         
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),   KC_LEFT,  KC_RGHT,
                                                 KC_LGUI,        KC_LALT,
                                                                 KC_HOME,
-                                                KC_BSPC,KC_GRV, KC_END,
+                                                KC_BSPC,KC_SPC, KC_END,
         // right hand
         KC_PSCR,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
         MO(FN),             KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    KC_UP,   KC_DOWN,KC_RBRC,KC_BSLS,          KC_RO,
              KC_LALT,        MO(FN),
              KC_PGUP,
-             KC_PGDN,KC_SPC, KC_ENT
+             KC_PGDN,KC_GRV, KC_ENT
     ),
 
 /* Keymap 1: Function Layer
