@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | LGui | LAlt |       | Alt  | LFn  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |Back  |      | Left |       |  Up  |        |      |
- *                                 |space |カナ  |------|       |------| Enter  |Space |
+ *                                 |space |Space |------|       |------|カナ    |Enter |
  *                                 |      |      | Right|       | Down |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LCTL(KC_X),     LCTL(KC_V),   LCTL(KC_C),   KC_HOME,  KC_END,
                                                 KC_LGUI,        KC_LALT,
                                                                 KC_LEFT,
-                                                KC_BSPC,KC_GRV, KC_RGHT,
+                                                KC_BSPC,KC_SPC, KC_RGHT,
         // right hand
         KC_PSCR,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
         MO(FN),             KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    KC_PGUP, KC_PGDN ,KC_RBRC,KC_BSLS,          KC_RO,
              KC_LALT,        MO(FN),
              KC_UP,
-             KC_DOWN,KC_SPC, KC_ENT
+             KC_DOWN,KC_GRV, KC_ENT
     ),
 
 /* Keymap 1: Function Layer
