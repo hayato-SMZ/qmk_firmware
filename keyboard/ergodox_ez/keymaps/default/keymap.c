@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    KC_UP,   KC_DOWN,KC_RBRC,KC_BSLS,          KC_RO,
              KC_LALT,        MO(FN),
              KC_PGUP,
-             KC_PGDN,KC_ENT, KC_SPC
+             KC_PGDN,KC_SPC, KC_ENT
     ),
 
 /* Keymap 1: Function Layer
@@ -96,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,
        KC_TRNS, KC_VOLD, KC_VOLU
     ),
-    
+
 /* Keymap 2: Mouse Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -170,7 +170,7 @@ void matrix_init_user(void) {
     ergodox_right_led_1_on();
     ergodox_right_led_2_on();
     ergodox_right_led_3_on();
-    ergodox_board_led_off();    
+    ergodox_board_led_off();
 };
 
 // Runs constantly in the background, in a loop.
