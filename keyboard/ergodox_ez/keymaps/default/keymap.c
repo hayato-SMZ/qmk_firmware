@@ -79,8 +79,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [FN] = KEYMAP(
        // left hand
        KC_TRNS,       KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,
-       KC_CAPS,     KC_P1,      KC_P2,   KC_P3,   KC_P4,   KC_P5,   KC_P6,
-       KC_TRNS,     KC_P7,    KC_P8, KC_P9, KC_P0, KC_TRNS,
+       KC_CAPS,     KC_LANG1,      KC_LANG2,   KC_LANG3,   KC_LANG4,   KC_LANG5,   KC_TRNS,
+       KC_TRNS,     KC_LANG7,    KC_LANG8, KC_LANG9, KC_LANG6, KC_TRNS,
        KC_TRNS,     KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS,     KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,
                                                             KC_TRNS, KC_TRNS,
