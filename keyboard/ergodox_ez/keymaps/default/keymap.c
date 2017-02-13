@@ -44,11 +44,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                 KC_HOME,
                                                 KC_SPC,KC_BSLS, KC_LEFT,
         // right hand
-        KC_KANA,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
+        KC_INT_3,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
         MO(FN),             KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
                             KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          KC_QUOT,
         LALT(LCTL(KC_DEL)) ,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_EQL,
-                                   KC_DOWN, KC_PGDN ,KC_RBRC,KC_BSPC,          KC_BSLS,
+                                   KC_DOWN, KC_PGDN ,KC_RBRC,KC_BSPC,          KC_INT_1,
              KC_LALT,        MO(FN),
              KC_END,
              KC_RGHT,KC_ESC, KC_ENT
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [FN] = KEYMAP(
        // left hand
        KC_TRNS,       KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,
-       KC_CAPS,     KC_LANG1,      KC_LANG2,   KC_LANG3,   KC_LANG4,   KC_LANG5,   KC_TRNS,
+       KC_CAPS,     KC_LNUM,      KC_LANG2,   KC_LANG3,   KC_LANG4,   KC_LANG5,   KC_TRNS,
        KC_TRNS,     KC_LANG7,    KC_LANG8, KC_LANG9, KC_LANG6, KC_TRNS,
        KC_TRNS,     KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS,     KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,
