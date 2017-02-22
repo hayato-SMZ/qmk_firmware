@@ -8,8 +8,6 @@
 #define BASE    0  // default layer
 #define FN      1  // functions
 #define MOUSE   2  // mouse mode
-#define JARO KC_RO
-#define JA_ENVL KC_JYEN
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Windows layer (JIS layout)
@@ -46,14 +44,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                 KC_HOME,
                                                 KC_SPC,KC_BSLS, KC_LEFT,
         // right hand
-        JA_ENVL ,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
+        KC_BSPC ,            KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
         MO(FN),             KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
                             KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          KC_QUOT,
-        LALT(LCTL(KC_DEL)) ,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_EQL,
-                                   KC_DOWN, KC_PGDN ,KC_RBRC,KC_BSPC,          JARO,
+        LALT(LCTL(KC_DEL)) ,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_BSPC,
+                                   KC_DOWN, KC_PGDN ,KC_EQL,KC_RBRC,          ,
              KC_LALT,        MO(FN),
              KC_END,
-             KC_RGHT,KC_ESC, KC_ENT
+             KC_RGHT,LALT(KC_ESC), KC_ENT
     ),
 
 /* Keymap 1: Function Layer
